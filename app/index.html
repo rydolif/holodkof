@@ -1,0 +1,1153 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+	<!-- <base href="/"> -->
+
+	<title>Holodkof</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	
+	<!-- Template Basic Images Start -->
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<!-- Template Basic Images End -->
+	
+	<!-- Custom Browsers Color Start -->
+	<meta name="theme-color" content="#000">
+	<!-- Custom Browsers Color End -->
+	 <style>
+		.preloader{
+			position: fixed;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			z-index: 9999;
+			background-color: #fff;
+		}
+
+		.pulse{
+			position: relative;
+			left: 50%;
+			top: 50vh;
+			margin: -40px 0 0 -40px;
+		}
+
+		.pulse::before, .pulse::after{
+			content: '';
+			border: 5px solid #058ce6;
+			height: 80px;
+			width: 80px;
+			border-radius: 50%;
+			position: absolute;
+		}
+
+		.pulse::before{
+			animation: pulse-outer .8s ease-in infinite;
+		}
+
+		.pulse::after{
+			animation: pulse-inner .8s ease-in infinite;
+		}
+
+		@keyframes pulse-outer{
+				0%{
+					opacity: .1;
+				}
+				50%{
+					opacity: .5;
+				}
+				100%{
+					opacity: 0;
+				}
+			}
+
+		@keyframes pulse-inner{
+				0%{
+					opacity: 1;
+					transform: scale(0);
+				}
+				100%{
+					opacity: 0;
+					transform: scale(1);
+				}
+			}
+	 </style>
+</head>
+
+<body>
+	<div class="preloader">
+		<div class="pulse"></div>
+	</div>
+
+	<!-- Custom HTML -->
+
+	<header class="header" id="header">
+		<div class="header__top">
+			<div class="container">
+				<div class="header__top-block">
+
+					<img src="img/logo.png" alt="logo" class="logo header__logo">
+					
+					<button class="hamburger hamburger--collapse" type="button">
+						<span class="hamburger-box">
+							<span class="hamburger-inner"></span>
+						</span>
+					</button>
+
+					<nav class="nav header__nav">
+						<ul class="header__list">
+							<li class="header__item"><a href="#header" class="header__link">Главная</a></li>
+							<li class="header__item"><a href="#causes" class="header__link">О компании</a></li>
+							<li class="header__item"><a href="#value" class="header__link">Цены</a></li>
+							<li class="header__item"><a href="#header" class="header__link">Акции</a></li>
+							<li class="header__item"><a href="#reviews" class="header__link">Отзывы</a></li>
+							<li class="header__item"><a href="#map" class="header__link">Контакты</a></li>
+						</ul>
+
+						<div class="header__nav-call header__call">
+							<a href="tel:+7(499)499-51-59" class="tel header__nav-tel"><span>+7 (499) </span>499-51-59</a>
+							<button class="call__back callback_open">Заказать звонок</button>
+						</div>
+
+					</nav>
+
+					<div class="header__call">
+						
+						<a href="tel:+7(499)499-51-59" class="tel header__tel"><span>+7 (499) </span>499-51-59</a>
+						<button class="call__back callback_open">Заказать звонок</button>
+						
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="header__center-block">
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+
+						
+						<h1 class="header__title">Срочный ремонт <br><span>холодильников в Москве</span></h1>
+
+						<p class="header__subtitle">Выезд мастера на дом бесплатно. <br>Гарантия 2 года на качество ремонта.</p>
+
+						<p class="header__text">При вызове мастера сейчас, <br>Скидка на ремонт 20% в подарок!</p>
+
+						<button class="header__btn evoke_open">вызвать мастера</button>
+						
+						<ul class="header__items">
+							<li class="header__box"><div class="header__square"></div>Бесплатно <br><span>выезд на дом</span></li>
+							<li class="header__box"><div class="header__square"></div>2 года гарантия <br><span>на работы</span></li>
+							<li class="header__box"><div class="header__square"></div>Ремонт <br><span>в день обращения</span></li>
+						</ul>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="main">
+		<section class="section value" id="value">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-md-12">
+						<h2 class="value__title title"><span>Стоимость</span> ремонта</h2>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+						<div class="value__block">
+							<div class="value__sircle one"></div>
+							<div class="value__block-top">
+								<h3 class="value__subtitle">Неисправности <br>и ремонт</h3>
+								<p class="value__services">Набор услуг</p>
+							</div>
+
+							<ul class="value__list">
+								<li class="value__item">Не морозит</li>
+								<li class="value__item">Сильно морозит</li>
+								<li class="value__item">Не выключается</li>
+								<li class="value__item">Не включается</li>
+								<li class="value__item">Покрывается льдом</li>
+								<li class="value__item">Протекает</li>
+								<li class="value__item">Сильно шумит</li>
+								<li class="value__item">Работает только морозильная камера</li>
+							</ul>
+
+							<div class="value__block-bottom">
+								<p class="value__place">ЦЕНА:<br> от <span>350</span> <span class="uppercase">руб</span></p>
+								<button class="btn value__btn repairs_open">заказать</button>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+						<div class="value__block">
+							<div class="value__sircle two"></div>
+							<div class="value__block-top">
+								<h3 class="value__subtitle">Неисправности <br>и ремонт</h3>
+								<p class="value__services">Набор услуг</p>
+							</div>
+
+							<ul class="value__list">
+								<li class="value__item">Стоимость материалов</li>
+								<li class="value__item">Установка фильтров</li>
+								<li class="value__item">Ремонт компрессоров</li>
+								<li class="value__item">Утечка хладагента</li>
+								<li class="value__item">Ремонт испарителя, тена</li>
+								<li class="value__item">Ремонт с перезарядкой</li>
+								<li class="value__item">Замена конденсатора</li>
+							</ul>
+
+							<div class="value__block-bottom">
+								<p class="value__place">ЦЕНА:<br> от <span>500</span> <span class="uppercase">руб</span></p>
+								<button class="btn value__btn repairs-two_open">заказать</button>
+							</div>
+
+						</div>
+					</div>
+
+
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+						<div class="value__block">
+							<div class="value__sircle three"></div>
+							<div class="value__block-top">
+								<h3 class="value__subtitle">Неисправности <br>и ремонт</h3>
+								<p class="value__services">Набор услуг</p>
+							</div>
+
+							<ul class="value__list">
+								<li class="value__item">Ремонт электросхем</li>
+								<li class="value__item">Ремонт платы управления</li>
+								<li class="value__item">Устранение засоров</li>
+								<li class="value__item">Замена термостата</li>
+								<li class="value__item">Замена таймера</li>
+								<li class="value__item">Замена датчика температуры</li>
+								<li class="value__item">Ремонт плавкого предохранителя</li>
+								<li class="value__item">Замена пускозащитного <br>реле</li>
+							</ul>
+
+							<div class="value__block-bottom">
+								<p class="value__place">ЦЕНА:<br> от <span>800</span> <span class="uppercase">руб</span></p>
+								<button class="btn value__btn repairs-three_open">заказать</button>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 col-12">
+						<div class="value__block">
+							<div class="value__sircle four"></div>
+							<div class="value__block-top">
+								<h3 class="value__subtitle">Неисправности <br>и ремонт</h3>
+								<p class="value__services">Набор услуг</p>
+							</div>
+
+							<ul class="value__list">
+								<li class="value__item">Замена вентилятора обдува</li>
+								<li class="value__item">Прочистка слива (дренаж)</li>
+								<li class="value__item">Удаление петли обогрева</li>
+								<li class="value__item">Замена дефростера</li>
+								<li class="value__item">Ремонт системы оттайки</li>
+								<li class="value__item">Дополнительные работы</li>
+								<li class="value__item">Мелкий ремонт</li>
+								<li class="value__item">Капитальный ремонт</li>
+							</ul>
+
+							<div class="value__block-bottom">
+								<p class="value__place">ЦЕНА:<br> от <span>250</span> <span class="uppercase">руб</span></p>
+								<button class="btn value__btn repairs-four_open">заказать</button>
+							</div>
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section causes" id="causes">
+			<div class="container">
+				<h2 class="causes__title section__title">9 причин</h2>
+				<h3 class="causes__subtitle section__subtitle">выбрать <br>нашу компанию</h3>
+				
+				<div class="causes__container">
+
+					<div class="causes__block">
+						<div class="causes__sircle"><img src="img/causes/one.svg" alt="sircle"></div>
+						<h4 class="causes__block-title">Специалисты</h4>
+						<p>Специалисты с опытом работы более 7 лет</p>
+					</div>
+
+					<div class="causes__block">
+						<div class="causes__sircle"><img src="img/causes/man.svg" alt="sircle"></div>
+						<h4 class="causes__block-title">ПРофессионалы</h4>
+						<p>Профессиональный подход к работе</p>
+					</div>
+
+					<div class="causes__block">
+						<div class="causes__sircle"><img src="img/causes/stock.svg" alt="sircle"></div>
+						<h4 class="causes__block-title">Склад деталей</h4>
+						<p>Всегда в наличии запасные детали</p>
+					</div>
+
+					<div class="causes__block">
+						<div class="causes__sircle"><img src="img/causes/clock.svg" alt="sircle"></div>
+						<h4 class="causes__block-title">Всегда в Срок</h4>
+						<p>100% гарантия быстрых сроков</p>
+					</div>
+
+					<div class="causes__block">
+						<div class="causes__sircle"><img src="img/causes/report.svg" alt="sircle"></div>
+						<h4 class="causes__block-title">ОТчет</h4>
+						<p>Составление полной отчетности</p>
+					</div>
+
+					<div class="causes__block">
+						<div class="causes__sircle"><img src="img/causes/treaty.svg" alt="sircle"></div>
+						<h4 class="causes__block-title">договор</h4>
+						<p>Работаем по официальному договору</p>
+					</div>
+
+					<div class="causes__block">
+						<div class="causes__sircle"><img src="img/causes/act.svg" alt="sircle"></div>
+						<h4 class="causes__block-title">Расчет</h4>
+						<p>Предварительный расчет стоимости</p>
+					</div>
+
+					<div class="causes__block">
+						<div class="causes__sircle"><img src="img/causes/car.svg" alt="sircle"></div>
+						<h4 class="causes__block-title">выезд мастера</h4>
+						<p>Выезд по Москве для всех бесплатно</p>
+					</div>
+
+					<div class="causes__block">
+						<div class="causes__sircle"><img src="img/causes/exam.svg" alt="sircle"></div>
+						<h4 class="causes__block-title">Решение</h4>
+						<p>Несколько вариантов решений</p>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section class="section problem" id="problem">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-12">
+						
+						<h2 class="section__title problem__title">5 проблем</h2>
+						<h3 class="section__subtitle problem__subtitle">от которых <br>мы вас избавим</h3>
+					</div>
+
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<div class="problem__box">
+
+							<div class="problem__block">
+								<h4 class="problem__block-title">Конкретная цена</h4>
+								<p>Вам не придется платить больше, чем было указано нами в начале</p>
+							</div>
+
+							<div class="problem__block">
+								<h4 class="problem__block-title">Гарантию</h4>
+								<p>Мы даем 100% гарантию соблюдения сроков</p>
+							</div>
+
+							<div class="problem__block">
+								<h4 class="problem__block-title">У нас цены прозрачны</h4>
+								<p>От диагностики до окончания ремонта.</p>
+							</div>
+
+							<div class="problem__block">
+								<h4 class="problem__block-title">Работают только специалисты</h4>
+								<p>Наши специалисты с опытом работы более 7 лет</p>
+							</div>
+
+							<div class="problem__block">
+								<h4 class="problem__block-title">Только по договору</h4>
+								<p>Мы работаем по договору. Всегда есть свои запчасти И даем гарантию 2 года.</p>
+							</div>
+
+						</div>
+					</div>
+
+					<div class="col-lg-6 col-md-6 col-sm-6">
+						<div class="problem__box problem__contain">
+
+							<div class="problem__block problem__content">
+								<h4 class="problem__block-title problem__contain-title">Вечно меняют цены после завершения ремонта</h4>
+								<p>Когда рассчитывается ремонт, показывается низкая цена, а после начала ремонта цена вырастает.</p>
+							</div>
+
+							<div class="problem__block problem__content">
+								<h4 class="problem__block-title problem__contain-title">Не приехали в указанное время</h4>
+								<p>Когда рассчитывается ремонт, показывается низкая цена, а после начала ремонта цена вырастает.</p>
+							</div>
+
+							<div class="problem__block problem__content">
+								<h4 class="problem__block-title problem__contain-title">Заоблачные цены</h4>
+								<p>Пользуются вашим незнанием расценок и сильно завышают их</p>
+							</div>
+							
+							<div class="problem__block problem__content">
+								<h4 class="problem__block-title problem__contain-title">Низкое качество работ</h4>
+								<p>Многие привлекают неквалифицированных работников, чтобы сэкономить.</p>
+							</div>
+
+							<div class="problem__block problem__content">
+								<h4 class="problem__block-title problem__contain-title">Требуют предоплату </h4>
+								<p>Когда Требуют предоплату на детали, а потом скрываются с деньгами или закупленными запчастями</p>
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section help" id="help">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-lg-7 col-md-6">
+
+						<h2 class="help__title title">Перестал работать холодильник?<br> <span>Вам поможем именно мы!</span></h2>
+
+						<ul class="help__list">
+							<li class="help__item"><div class="header__square"></div>В каждом городе есть наши отделения по ремонту бытовой техники, где <br>работают специализированные мастера своего дела.</li>
+							<li class="help__item"><div class="header__square"></div>Ремонт мы проводим исключительно на дому у заказчика,<br> чем и заслужили уважение от Вас!</li>
+						</ul>
+
+					</div>
+
+					<div class="col-lg-5 col-md-6">
+						<div class="form value__form">
+							<h2 class="form__title">Оставьте заявку</h2>
+							<p class="form__subtitle">на <span>бесплатный</span> выезд мастера!</p>
+
+							<p class="form__desc">Только у нас вы получите качественно выполненную работу по самым низким ценам!</p>
+
+						  <form action="sendmail.php" class="row callback-help" method="post">
+
+						    <input type="hidden" name="subject" value="бесплатный выезд мастера!">
+
+						    <div class="col-md-12 col-sm-6 col-12 form-group">
+						      <input type="text" class="form__field" name="name" placeholder="Ваше имя" required>
+						    </div>
+
+						    <div class="col-md-12 col-sm-6 col-12 form-group">
+						      <input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+						    </div>
+
+						  	<p class=" col-md-12 col-sm-12 form__text">Ваши контактные данные в безопасности и не будут переданы третьим лицам</p>
+
+						    <div class="col-sm-12 form-group">
+						      <input type="submit" class="btn form__btn" name="submit" value="Оставить заявку">
+						    </div>
+
+						  </form>
+
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</section>
+
+		<section class="examples section" id="examples">
+			<div class="container">
+				<div class="row">
+					
+					<div class="col-sm-12">
+						<h2 class="title examples__title"><span>Наши</span> работы</h2>
+					</div>
+
+					<div class="col-lg-7">
+
+					  <div class="slider-for">
+					    <div class="slider-for__block"><img src="img/slider/one.jpg" class="slider-for__img" alt="slider"></div>
+					    <div class="slider-for__block"><img src="img/slider/two.jpg" class="slider-for__img" alt="slider"></div>
+					    <div class="slider-for__block"><img src="img/slider/three.jpg" class="slider-for__img" alt="slider"></div>
+					    <div class="slider-for__block"><img src="img/slider/four.jpg" class="slider-for__img" alt="slider"></div>
+					    <div class="slider-for__block"><img src="img/slider/two.jpg" class="slider-for__img" alt="slider"></div>
+					  </div>
+
+					  <div class="slider-nav">
+					    <div class="slider-nav__block"><img src="img/slider/one.jpg"  class="slider-nav__img"  alt="slider"></div>
+					    <div class="slider-nav__block"><img src="img/slider/two.jpg"  class="slider-nav__img" alt="slider"></div>
+					    <div class="slider-nav__block"><img src="img/slider/three.jpg" class="slider-nav__img" alt="slider"></div>
+					    <div class="slider-nav__block"><img src="img/slider/four.jpg"  class="slider-nav__img" alt="slider"></div>
+					     <div class="slider-nav__block"><img src="img/slider/two.jpg"  class="slider-nav__img" alt="slider"></div>
+					  </div>
+
+					</div>
+
+					<div class="col-lg-5">
+						<h3 class="examples__subtitle">Примеры работ и цены на ремонт холодильников на дому</h3>
+
+						<h4 class="examples__lead">Причина обращения:</h4>
+						<ul class="examples__list">
+							<li>Сгорел мотор-компрессор.</li>
+						</ul>
+
+						<h4 class="examples__lead">Работы: </h4>
+						<ul class="examples__list">
+							<li>Замена компрессора.</li>
+							<li>Замена фильтра осушителя.</li>
+							<li>Заправка хладагентом.</li>
+						</ul>
+
+						<h4 class="examples__lead">Общая стоимость ремонта: </h4>
+						<ul class="examples__list">
+							<li>7000 руб.</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="section work" id="work">
+			<div class="container">
+				<h2 class="title work__title">Как мы <span>работаем</span>?</h2>
+
+				<div class="work__container">
+
+					<div class="work__block">
+						<div class="work__sircle"><div class="work__namber">1</div></div>
+						<h3 class="work__block-title">Оставьте заявку</h3>
+						<a class="work__block-link application_open">Оставьте заявку на сайте</a>
+						<p>и наш специалист проконсультирует вас по этому вопросу</p>
+					</div>
+
+					<div class="work__block">
+						<div class="work__sircle"><div class="work__namber">2</div></div>
+						<h3 class="work__block-title">Мы приедем к вам</h3>
+						<p>Выезд специалиста бесплатный</p>
+					</div>
+
+					<div class="work__block">
+						<div class="work__sircle"><div class="work__namber">3</div></div>
+						<h3 class="work__block-title">Проведем расчет</h3>
+						<p>Мы проведем бесплатный расчет ремонта</p>
+					</div>
+
+					<div class="work__block">
+						<div class="work__sircle"><div class="work__namber">4</div></div>
+						<h3 class="work__block-title">Диагностика</h3>
+						<p>Мы проведем бесплатную диагностику вашего холодильника</p>
+					</div>
+
+					<div class="work__block">
+						<div class="work__sircle"><div class="work__namber">5</div></div>
+						<h3 class="work__block-title">Приступим к ремонту</h3>
+						<p>Приступим к ремонту вашего холодильника и в краткие сроки сделаем</p>
+					</div>
+
+					<div class="work__block">
+						<div class="work__sircle"><div class="work__namber">6</div></div>
+						<h3 class="work__block-title">Довольный клиент</h3>
+						<p>Возвращаем ваш отремонтированный холодильник с бесплатной доставкой</p>
+					</div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section class="section refit" id="refit">
+			<div class="container">
+				
+				<h2 class="title refit__title">Ремонт <span>более 50 </span>марок</h2>
+
+				<div class="refit__container">
+
+					<div class="refit__block"><img src="img/logo/zanussi.png" alt="refit" class="refit__img"></div>
+					<div class="refit__block"><img src="img/logo/atlant.png" alt="refit" class="refit__img"></div>
+
+					<div class="refit__block"><img src="img/logo/samsung.png" alt="refit" class="refit__img"></div>
+					<div class="refit__block"><img src="img/logo/electrolux.png" alt="refit" class="refit__img"></div>
+
+					<div class="refit__block"><img src="img/logo/beko.png" alt="refit" class="refit__img"></div>
+					<div class="refit__block"><img src="img/logo/lg.png" alt="refit" class="refit__img"></div>
+
+					<div class="refit__block"><img src="img/logo/norm.png" alt="refit" class="refit__img"></div>
+					<div class="refit__block"><img src="img/logo/indesit.png" alt="refit" class="refit__img"></div>
+
+				</div>
+
+			</div>
+		</section>
+
+		<section class="section doc" id="doc">
+			<div class="container">
+				<h2 class="title doc__title"><span>Гарантия </span>качества</h2>
+
+				<div class="doc__container">
+					<div class="doc__block"><a data-fancybox="gallery" href="img/gallery/one.jpg" class="doc__link"><img src="img/gallery/one.jpg" alt="gallery" class="doc__img"></a></div>
+					<div class="doc__block"><a data-fancybox="gallery" href="img/gallery/two.jpg" class="doc__link"><img src="img/gallery/two.jpg" alt="gallery" class="doc__img"></a></div>
+					<div class="doc__block"><a data-fancybox="gallery" href="img/gallery/three.jpg" class="doc__link"><img src="img/gallery/three.jpg" alt="gallery" class="doc__img"></a></div>
+					<div class="doc__block"><a data-fancybox="gallery" href="img/gallery/two.jpg" class="doc__link"><img src="img/gallery/two.jpg" alt="gallery" class="doc__img"></a></div>
+				</div>
+
+			</div>
+		</section>
+
+		<section class="section reviews" id="reviews">
+			<div class="container">
+				<h2 class="title reviews__title">Отзывы <span>наших клиентов</span></h2>
+
+				<div class="reviews__container">
+
+					<div class="reviews__block">
+						<div class="reviews__block-top">
+							<p class="reviews__name"><img src="img/like.svg" alt="like">Иван Петров</p>
+							<p class="reviews__date">29.03.2018</p>
+						</div>
+						<p class="reviews__block-content">Добрый день! <br>
+						Очень хочу выразить благодарность за Вашу работу! Перестал морозить холодильник, обратился за помощью,быстро приехали,прямо на месте всё сделали, предварительно уточнив марку и модель оборудования. Мастер-приятный человек, проконсультировал как в будущем продлить жизнь своему холодильнику))
+						<br><br>
+						—   Рекомендую!
+						</p>
+					</div>
+
+					<div class="reviews__block">
+						<div class="reviews__block-top">
+							<p class="reviews__name"><img src="img/like.svg" alt="like">Елена Петрович</p>
+							<p class="reviews__date">29.03.2018</p>
+						</div>
+						<p class="reviews__block-content">
+							Срочный заказ на ремонт холодильника выполнен. Я очень счастлива, что это все закончилось, и хочу поблагодарить мастера из "Холодкоф" за то, что приехал вовремя, несмотря на высокую занятость и тяжелое состояние дорог в это время, сделал все максимально быстро и качественно, как показывает время, а еще объяснил, что случилось с холодильником, по какой причине и как избежать повторной поломки в будущем. У меня и мужа остались очень приятные впечатления после визита этого мастера. В будущем при необходимости будем обращаться только к вам.
+							<br><br>
+							—   Спасибо.
+						</p>
+					</div>
+
+					<div class="reviews__block">
+						<div class="reviews__block-top">
+							<p class="reviews__name"><img src="img/like.svg" alt="like">Иван Петров</p>
+							<p class="reviews__date">29.03.2018</p>
+						</div>
+						<p class="reviews__block-content">Добрый день! <br>
+						Очень хочу выразить благодарность за Вашу работу! Перестал морозить холодильник, обратился за помощью,быстро приехали,прямо на месте всё сделали, предварительно уточнив марку и модель оборудования. Мастер-приятный человек, проконсультировал как в будущем продлить жизнь своему холодильнику))
+						<br><br>
+						—   Рекомендую!
+						</p>
+					</div>
+				</div>
+
+				<button class="btn reviews__btn review-form_open">оставить отзыв</button>
+			</div>
+		</section>
+
+		<div id="map"></div>
+
+	</main>
+	
+	<footer class="footer" id="footer">
+		<div class="container">
+
+			<div class="footer__container">
+					<img src="img/logo.png" alt="logo" class="logo header__logo">
+
+					<nav class="nav header__nav">
+						<ul class="header__list">
+							<li class="header__item"><a href="#" class="header__link">Главная</a></li>
+							<li class="header__item"><a href="#causes" class="header__link">О компании</a></li>
+							<li class="header__item"><a href="#value" class="header__link">Цены</a></li>
+							<li class="header__item"><a href="#" class="header__link">Акции</a></li>
+							<li class="header__item"><a href="#reviews" class="header__link">Отзывы</a></li>
+							<li class="header__item"><a href="#map" class="header__link">Контакты</a></li>
+						</ul>
+
+
+					</nav>
+
+					<div class="header__call footer__call">
+						
+						<a href="tel:+7(499)499-51-59" class="tel header__tel"><span>+7 (499) </span>499-51-59</a>
+						<button class="call__back callback_open">Заказать звонок</button>
+						
+					</div>
+				</div>
+
+			<div class="footer__copy">©2018 Holodkof. Все права защищены</div>
+
+		</div>
+	</footer>
+
+	<div class="modal" id='callback'>
+		<div class="form">
+
+			<button class="hamburger hamburger--elastic is-active callback_close modal__close" type="button">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			  </span>
+	  		</button>
+
+			<h2 class="form__title">Ообратный звонок</h2>
+			<p class="form__subtitle">Оставьте заявку и наш менеджер свяжется с вами в течение <span>5 минут</span></p>
+
+		  <form action="sendmail.php" class="row callback-form" method="post">
+
+		    <input type="hidden" name="subject" value="Обратный звонок">
+
+		    <div class="col-12 form-group">
+		      <input type="text" class="form__field" name="name" placeholder="Ваше имя" required>
+		    </div>
+
+		    <div class="col-12 form-group">
+		      <input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+		    </div>
+
+		  	<p class="col-12 form__text">Ваши контактные данные в безопасности и не будут переданы третьим лицам</p>
+
+		    <div class="col-12 form-group">
+		      <input type="submit" class="btn form__btn" name="submit" value="Заказать звонок">
+		    </div>
+
+		  </form>
+
+		</div>
+	</div>
+	
+	<div class="modal" id='repairs'>
+		<div class="form">
+
+			<button class="hamburger hamburger--elastic is-active repairs_close modal__close" type="button">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			  </span>
+	  	</button>
+
+			<h2 class="form__title">Оставьте заявку</h2>
+			<p class="form__subtitle">Неисправности и ремонт <br><span>цена: от 350 РУБ</span></p>
+
+		  <form action="sendmail.php" class="row repairs" method="post">
+
+		    <input type="hidden" name="subject" value="Неисправности и ремонт цена: от 350 РУБ">
+
+		    <div class="col-12 form-group">
+		      <input type="text" class="form__field" name="name" placeholder="Ваше имя" required>
+		    </div>
+
+		    <div class="col-12 form-group">
+		      <input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+		    </div>
+
+		  	<p class="col-12 form__text">Ваши контактные данные в безопасности и не будут переданы третьим лицам</p>
+
+		    <div class="col-12 form-group">
+		      <input type="submit" class="btn form__btn" name="submit" value="Заказать">
+		    </div>
+
+		  </form>
+
+		</div>
+	</div>
+
+	<div class="modal" id='repairs-two'>
+		<div class="form">
+
+			<button class="hamburger hamburger--elastic is-active repairs-two_close modal__close" type="button">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			  </span>
+	  	</button>
+
+			<h2 class="form__title">Оставьте заявку</h2>
+			<p class="form__subtitle">Неисправности и ремонт <br><span>цена: от 500 РУБ</span></p>
+
+		  <form action="sendmail.php" class="row repairs-two" method="post">
+
+		    <input type="hidden" name="subject" value="Неисправности и ремонт цена: от 500 РУБ">
+
+		    <div class="col-12 form-group">
+		      <input type="text" class="form__field" name="name" placeholder="Ваше имя" required>
+		    </div>
+
+		    <div class="col-12 form-group">
+		      <input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+		    </div>
+
+		  	<p class="col-12 form__text">Ваши контактные данные в безопасности и не будут переданы третьим лицам</p>
+
+		    <div class="col-12 form-group">
+		      <input type="submit" class="btn form__btn" name="submit" value="Заказать">
+		    </div>
+
+		  </form>
+
+		</div>
+	</div>
+
+	<div class="modal" id='repairs-three'>
+		<div class="form">
+
+			<button class="hamburger hamburger--elastic is-active repairs-three_close modal__close" type="button">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			  </span>
+	  	</button>
+
+			<h2 class="form__title">Оставьте заявку</h2>
+			<p class="form__subtitle">Неисправности и ремонт <br><span>цена: от 800 РУБ</span></p>
+
+		  <form action="sendmail.php" class="row repairs-three" method="post">
+
+		    <input type="hidden" name="subject" value="Неисправности и ремонт цена: от 800 РУБ">
+
+		    <div class="col-12 form-group">
+		      <input type="text" class="form__field" name="name" placeholder="Ваше имя" required>
+		    </div>
+
+		    <div class="col-12 form-group">
+		      <input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+		    </div>
+
+		  	<p class="col-12 form__text">Ваши контактные данные в безопасности и не будут переданы третьим лицам</p>
+
+		    <div class="col-12 form-group">
+		      <input type="submit" class="btn form__btn" name="submit" value="Заказать">
+		    </div>
+
+		  </form>
+
+		</div>
+	</div>
+
+	<div class="modal" id='repairs-four'>
+		<div class="form">
+
+			<button class="hamburger hamburger--elastic is-active repairs-four_close modal__close" type="button">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			  </span>
+	  	</button>
+
+			<h2 class="form__title">Оставьте заявку</h2>
+			<p class="form__subtitle">Неисправности и ремонт <br><span>цена: от 250 РУБ</span></p>
+
+		  <form action="sendmail.php" class="row repairs-four" method="post">
+
+		    <input type="hidden" name="subject" value="Неисправности и ремонт цена: от 250 РУБ">
+
+		    <div class="col-12 form-group">
+		      <input type="text" class="form__field" name="name" placeholder="Ваше имя" required>
+		    </div>
+
+		    <div class="col-12 form-group">
+		      <input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+		    </div>
+
+		  	<p class="col-12 form__text">Ваши контактные данные в безопасности и не будут переданы третьим лицам</p>
+
+		    <div class="col-12 form-group">
+		      <input type="submit" class="btn form__btn" name="submit" value="Заказать">
+		    </div>
+
+		  </form>
+
+		</div>
+	</div>
+
+	<div class="modal" id='evoke'>
+		<div class="form">
+
+			<button class="hamburger hamburger--elastic is-active evoke_close modal__close" type="button">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			  </span>
+	  	</button>
+
+			<h2 class="form__title">Вызвать мастера</h2>
+			<p class="form__subtitle">При вызове мастера сейчас, <br><span>Скидка на ремонт <br>20% в подарок!</span></p>
+
+		  <form action="sendmail.php" class="row evoke" method="post">
+
+		    <input type="hidden" name="subject" value="Вызвать мастера Скидка на ремонт 20% в подарок!">
+
+		    <div class="col-12 form-group">
+		      <input type="text" class="form__field" name="name" placeholder="Ваше имя" required>
+		    </div>
+
+		    <div class="col-12 form-group">
+		      <input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+		    </div>
+
+		  	<p class="col-12 form__text">Ваши контактные данные в безопасности и не будут переданы третьим лицам</p>
+
+		    <div class="col-12 form-group">
+		      <input type="submit" class="btn form__btn" name="submit" value="вызвать мастера">
+		    </div>
+
+		  </form>
+
+		</div>
+	</div>
+
+	<div class="modal" id='review-form'>
+		<div class="form">
+
+			<button class="hamburger hamburger--elastic is-active review-form_close modal__close" type="button">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			  </span>
+	  	</button>
+
+			<h2 class="form__title">Оставить отзыв</h2>
+			<p class="form__subtitle">Оставить отзыв <span>о наших услугах</span></p>
+
+		  <form action="sendmail.php" class="row review-form" method="post">
+
+		    <input type="hidden" name="subject" value="Оставить отзыв о наших услугах">
+
+		    <div class="col-12 form-group">
+		      <input type="text" class="form__field" name="name" placeholder="Ваше имя" required>
+		    </div>
+
+		    <div class="col-12 form-group">
+		      <input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+		    </div>
+
+		    <div class="col-12 form-group">
+		      <textarea name="comment" class="form__field" placeholder="Ваш отзыв" required></textarea>
+		    </div>
+
+		  	<p class="col-12 form__text">Ваши контактные данные в безопасности и не будут переданы третьим лицам</p>
+
+		    <div class="col-12 form-group">
+		      <input type="submit" class="btn form__btn" name="submit" value="Заказать">
+		    </div>
+
+		  </form>
+
+		</div>
+	</div>
+
+
+	<div class="modal" id='application'>
+		<div class="form">
+
+			<button class="hamburger hamburger--elastic is-active application_close modal__close" type="button">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			  </span>
+	  	</button>
+
+
+				<h2 class="form__title">Оставьте заявку</h2>
+				<p class="form__subtitle">на <span>бесплатный</span> выезд мастера!</p>
+
+				<p class="form__desc">Только у нас вы получите качественно выполненную работу по самым низким ценам!</p>
+
+			  <form action="sendmail.php" class="row application" method="post">
+
+			    <input type="hidden" name="subject" value="Бесплатный выезд мастера!">
+
+			    <div class="col-md-12 col-sm-6 col-10 form-group">
+			      <input type="text" class="form__field" name="name" placeholder="Ваше имя" required>
+			    </div>
+
+			    <div class="col-md-12 col-sm-6 col-10 form-group">
+			      <input type="tel" name="phone" class="form__field" required placeholder="Ваш телефон" pattern="\+7\s\([0-9]{3}\)\s[0-9]{3}-[0-9]{2}-[0-9]{2}">
+			    </div>
+
+			  	<p class=" col-md-12 col-sm-12 form__text">Ваши контактные данные в безопасности и не будут переданы третьим лицам</p>
+
+			    <div class="col-sm-12 form-group">
+			      <input type="submit" class="btn form__btn" name="submit" value="Заказать звонок">
+			    </div>
+
+			  </form>
+
+		</div>
+	</div>
+
+	<div class="modal" id='thanks'>
+		<div class="form">
+
+			<button class="hamburger hamburger--elastic is-active thanks_close modal__close" type="button">
+			  <span class="hamburger-box">
+			    <span class="hamburger-inner"></span>
+			  </span>
+	  	</button>
+
+			<h2 class="form__title">Спасибо за заказ</h2>
+			<p class="form__subtitle">Скоро мы Вам перезвоним!</p>
+
+		</div>
+	</div>
+
+	<link rel="stylesheet" href="css/main.min.css">
+	<script src="js/scripts.min.js"></script>
+	<script>
+	  function initMap() {
+	    var uluru = {lat: 55.750519, lng: 37.8139069};
+	    var map = new google.maps.Map(document.getElementById('map'), {
+	      zoom: 16,
+	      center: uluru,
+	      styles: [
+	    {
+	        "featureType": "administrative",
+	        "elementType": "all",
+	        "stylers": [
+	            {
+	                "saturation": "-100"
+	            }
+	        ]
+	    },
+	    {
+	        "featureType": "administrative.province",
+	        "elementType": "all",
+	        "stylers": [
+				            {
+				                "visibility": "off"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "landscape",
+				        "elementType": "all",
+				        "stylers": [
+				            {
+				                "saturation": -100
+				            },
+				            {
+				                "lightness": 65
+				            },
+				            {
+				                "visibility": "on"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "poi",
+				        "elementType": "all",
+				        "stylers": [
+				            {
+				                "saturation": -100
+				            },
+				            {
+				                "lightness": "50"
+				            },
+				            {
+				                "visibility": "simplified"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "road",
+				        "elementType": "all",
+				        "stylers": [
+				            {
+				                "saturation": "-100"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "road.highway",
+				        "elementType": "all",
+				        "stylers": [
+				            {
+				                "visibility": "simplified"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "road.arterial",
+				        "elementType": "all",
+				        "stylers": [
+				            {
+				                "lightness": "30"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "road.local",
+				        "elementType": "all",
+				        "stylers": [
+				            {
+				                "lightness": "40"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "transit",
+				        "elementType": "all",
+				        "stylers": [
+				            {
+				                "saturation": -100
+				            },
+				            {
+				                "visibility": "simplified"
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "water",
+				        "elementType": "geometry",
+				        "stylers": [
+				            {
+				                "hue": "#ffff00"
+				            },
+				            {
+				                "lightness": -25
+				            },
+				            {
+				                "saturation": -97
+				            }
+				        ]
+				    },
+				    {
+				        "featureType": "water",
+				        "elementType": "labels",
+				        "stylers": [
+				            {
+				                "lightness": -25
+				            },
+				            {
+				                "saturation": -100
+				            }
+				        ]
+				    }
+						]
+	    });
+
+
+		  var marker = new google.maps.Marker({
+		    position: {lat: 55.748519, lng: 37.8139269},
+		    map: map,
+		    icon: 'img/mark.png'
+		  });
+
+	     var contentString = '<div id="content" class="map__content">'+
+      '<div id="siteNotice">'+
+      '</div>'+
+      '<h3 id="firstHeading" class="firstHeading title map__title">Свяжитесь с нами или <br><span>приходите в гости!</span></h3>'+
+      '<div id="bodyContent">'+
+      '<p class="map__adres"><span>Адрес:</span> г.Москва, Союзный проспект 14/9а</p>'+
+      '<p class="map__adres"><span>Телефон:</span> +7 (499) 499-51-59</p>'+
+      '<p class="map__adres"><span>E-mail:</span> info@holodkof.ru</p>'+
+      '</div>'+
+      '</div>';
+
+      var infowindow = new google.maps.InfoWindow({
+		    content: contentString
+		  });
+
+		  infowindow.open(map, marker);
+
+	  }
+	</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBmnk4RCDwjSucIJ2WXRnLkuCrsWR4DUM4&callback=initMap"></script>
+
+</body>
+</html>
